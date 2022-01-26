@@ -1,0 +1,41 @@
+<br><br>
+<p>Registrar Vehículo</p>
+<form>
+    <div class="mb-3">
+      <label for="exampleInputEmail1" class="form-label">Placa</label>
+      <input [(ngModel)]="vehiculo.placa" type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="placa" placeholder="Ingresa la placa">
+    </div>
+
+    <div class="mb-3">
+      <label for="exampleInputEmail1" class="form-label">Color</label>
+      <input [(ngModel)]="vehiculo.color" type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="color" id="color" placeholder="Ingresa el color">
+    </div>
+
+    <div class="mb-3">
+      <label for="exampleInputEmail1" class="form-label">Marca</label>
+      <input [(ngModel)]="vehiculo.marca" type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="marca" id="marca" placeholder="Ingresa la marca">
+    </div>
+
+    <div class="mb-3">
+      <label for="exampleInputEmail1" class="form-label">Tipo de Vehículo</label>
+      <input [(ngModel)]="vehiculo.tipo_vehiculo" type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="tipo_vehiculo" id="tipo_vehiculo" placeholder="Ingresa el tipo de vehículo">
+    </div>
+
+    <div class="mb-3">
+        <label for="exampleInputEmail1" class="form-label">Conductor</label>
+        <select name="conductor_id" id="conductor_id">
+          <option *ngFor="let conductor of conductores" [ngValue]="conductor.id">{{conductor.primer_nombre}} {{conductor.apellidos}}</option>
+        </select>
+    </div>
+
+    <div class="mb-3">
+        <label for="exampleInputEmail1" class="form-label">Propietario</label>
+      <select name="propietario_id" id="propietario_id">
+        <option *ngFor="let propietario of propietarios" [ngValue]="propietario.id">{{propietario.primer_nombre}} {{propietario.apellidos}}</option>
+      </select>
+    </div>
+
+    <div class="frame">
+      <button (click)="guardarForm3();" class="custom-btn btn-3" style="margin-top:10px; font-size: 25px;"><span>Registrar</span></button>  
+    </div>
+  </form>

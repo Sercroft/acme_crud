@@ -1,0 +1,42 @@
+<br><br>
+<p>Registrar Conductor</p>
+<form>
+    <div class="mb-3">
+      <label for="exampleInputEmail1" class="form-label">Cédula</label>
+      <input [(ngModel)]="conductor.cedula" type="number" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="cedula" placeholder="Ingresa tu cédula">
+    </div>
+
+    <div class="mb-3">
+      <label for="exampleInputEmail1" class="form-label">Primer nombre</label>
+      <input [(ngModel)]="conductor.primer_nombre" type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="primer_nombre" id="primer_nombre" placeholder="Ingresa tu primer nombre">
+    </div>
+
+    <div class="mb-3">
+      <label for="exampleInputEmail1" class="form-label">Segundo nombre</label>
+      <input [(ngModel)]="conductor.segundo_nombre" type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="segundo_nombre" id="segundo_nombre" placeholder="Ingresa tu segundo nombre">
+    </div>
+
+    <div class="mb-3">
+      <label for="exampleInputEmail1" class="form-label">Apellidos</label>
+      <input [(ngModel)]="conductor.apellidos" type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="apellidos" id="apellidos" placeholder="Ingresa tus apellidos">
+    </div>
+
+    <div class="mb-3">
+      <label for="exampleInputEmail1" class="form-label">Dirección</label>
+      <input [(ngModel)]="conductor.direccion" type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="direccion" id="direccion" placeholder="Ingresa tu dirección">
+    </div>
+
+    <div class="mb-3">
+      <label for="exampleInputEmail1" class="form-label">Teléfono</label>
+      <input [(ngModel)]="conductor.telefono" type="number" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="telefono" id="telefono" placeholder="Ingresa tu teléfono">
+    </div>
+
+    <div class="mb-3">
+      <label for="exampleInputEmail1" class="form-label">Ciudad</label>
+      <input [(ngModel)]="conductor.ciudad" type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="ciudad" id="ciudad" placeholder="Ingresa tu ciudad">
+    </div>
+
+    <div class="frame">
+      <button (click)="guardarForm2();" class="custom-btn btn-3" style="margin-top:10px; font-size: 25px;"><span>Registrar</span></button>  
+    </div>
+  </form>

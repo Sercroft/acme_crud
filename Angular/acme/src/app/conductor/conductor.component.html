@@ -1,0 +1,39 @@
+<div class="frame">
+  <a routerLink="/form2"><button class="custom-btn btn-3" style="margin-top:10px; font-size: 25px;"><span>Registrar</span></button></a>
+</div>
+<!--Table-->
+<table class="table table-hover table-fixed" style="margin-top: 10%;">
+
+  <!--Table head-->
+  <thead>
+    <tr class="tr-table">
+      <th>#</th>
+      <th>Cédula</th>
+      <th>Primer nombre</th>
+      <th>Segundo Nombre</th>
+      <th>Apellidos</th>
+      <th>Dirección</th>
+      <th>Teléfono</th>
+      <th>Ciudad</th> 
+    </tr>
+  </thead>
+  <!--Table head-->
+
+  <!--Table body-->
+  <tbody>
+    <tr class="tr2-table" *ngFor="let conductor of conductores">
+      <th scope="row">{{conductor.id}}</th>
+      <td>{{conductor.cedula}}</td>
+      <td>{{conductor.primer_nombre}}</td>
+      <td>{{conductor.segundo_nombre}}</td>
+      <td>{{conductor.apellidos}}</td>
+      <td>{{conductor.direccion}}</td>
+      <td>{{conductor.telefono}}</td>
+      <td>{{conductor.ciudad}}</td>
+    </tr>
+  </tbody>
+
+  <!--Table body-->
+
+</table>
+<!--Table-->
